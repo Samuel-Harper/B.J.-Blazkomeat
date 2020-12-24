@@ -1,10 +1,10 @@
-﻿{
-  "guid": "h3vr.tnhtweaker.bjblazkomeat",
-  "version": "0.1.1.0",
+{
+  "guid": "h3vr.tnhtweaker.bjblazko",
+  "version": "0.1.0.0",
   "dependencies": {
       "h3vr.tnhtweaker.deli": "0.1.4.0"
   },
-  "name": "BJ Blazkomeat",
+  "name": "B.J. Blazkomeat",
   "authors": [ 
     "Sam Harper" 
   ],
