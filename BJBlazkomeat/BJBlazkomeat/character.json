@@ -1,7 +1,7 @@
 {
   "DisplayName": "BJ Blazkomeat",
-  "Description": "Escape Castle Wurstenstein with a limited arsenal.",
-  "CharacterID": 2,
+  "Description": "Escape Castle Wurstenstein with a limited arsenal in this Wolfenstein 3D inspired character.",
+  "CharacterID": 5,
   "CharacterGroup": 2,
   "TableID": "BJBlazkomeat",
   "CharacterIconName": "no",
@@ -11,9 +11,9 @@
   "UsesPurchasePriceIncrement": true,
   "HasPrimaryWeapon": true,
   "HasSecondaryWeapon": false,
-  "HasTertiaryWeapon": false,
+  "HasTertiaryWeapon": true,
   "HasPrimaryItem": true,
-  "HasSecondaryItem": true,
+  "HasSecondaryItem": false,
   "HasTertiaryItem": false,
   "HasShield": false,
   "ValidAmmoEras": [
@@ -21,7 +21,9 @@
     "WildWest",
     "TurnOfTheCentury",
     "WW1",
-    "WW2"
+    "WW2",
+    "PostWar",
+    "Modern"
   ],
   "ValidAmmoSets": [
     "Real"
@@ -95,55 +97,6 @@
     "NumMags": 0,
     "NumRounds": 0,
     "AmmoOverride": -1,
-    "Tables": [],
-    "ListOverride": []
-  },
-  "PrimaryItem": {
-    "NumMags": 0,
-    "NumRounds": 0,
-    "AmmoOverride": null,
-    "Tables": [
-      {
-        "Category": "Powerup",
-        "ItemsToSpawn": 1,
-        "MinAmmoCapacity": -1,
-        "MaxAmmoCapacity": -1,
-        "NumMagsSpawned": -1,
-        "NumRoundsSpawned": -1,
-        "BespokeAttachmentChance": -1,
-        "RequiredExactCapacity": -1,
-        "IsBlanked": false,
-        "IsCompatibleMagazine": false,
-        "SpawnsInSmallCase": false,
-        "SpawnsInLargeCase": false,
-        "UseIDOverride": true,
-        "IDOverride": [],
-        "Eras": [],
-        "Sets": [],
-        "Sizes": [],
-        "Actions": [],
-        "Modes": [],
-        "ExcludedModes": [],
-        "FeedOptions": [],
-        "MountsAvailable": [],
-        "RoundPowers": [],
-        "Features": [],
-        "MeleeStyles": [],
-        "MeleeHandedness": [],
-        "MountTypes": [],
-        "PowerupTypes": [
-          "Health"
-        ],
-        "ThrownTypes": [],
-        "ThrownDamageTypes": []
-      }
-    ],
-    "ListOverride": []
-  },
-  "SecondaryItem": {
-    "NumMags": 0,
-    "NumRounds": 0,
-    "AmmoOverride": -1,
     "Tables": [
       {
         "Category": "MeleeWeapon",
@@ -184,6 +137,55 @@
         "ThrownDamageTypes": []
       }
     ],
+    "ListOverride": []
+  },
+  "PrimaryItem": {
+    "NumMags": 0,
+    "NumRounds": 0,
+    "AmmoOverride": null,
+    "Tables": [
+      {
+        "Category": "Powerup",
+        "ItemsToSpawn": 1,
+        "MinAmmoCapacity": -1,
+        "MaxAmmoCapacity": -1,
+        "NumMagsSpawned": 3,
+        "NumRoundsSpawned": 8,
+        "BespokeAttachmentChance": 0.5,
+        "RequiredExactCapacity": -1,
+        "IsBlanked": false,
+        "IsCompatibleMagazine": false,
+        "SpawnsInSmallCase": false,
+        "SpawnsInLargeCase": false,
+        "UseIDOverride": false,
+        "IDOverride": [],
+        "Eras": [],
+        "Sets": [],
+        "Sizes": [],
+        "Actions": [],
+        "Modes": [],
+        "ExcludedModes": [],
+        "FeedOptions": [],
+        "MountsAvailable": [],
+        "RoundPowers": [],
+        "Features": [],
+        "MeleeStyles": [],
+        "MeleeHandedness": [],
+        "MountTypes": [],
+        "PowerupTypes": [
+          "Health"
+        ],
+        "ThrownTypes": [],
+        "ThrownDamageTypes": []
+      }
+    ],
+    "ListOverride": []
+  },
+  "SecondaryItem": {
+    "NumMags": 0,
+    "NumRounds": 0,
+    "AmmoOverride": -1,
+    "Tables": [],
     "ListOverride": []
   },
   "TertiaryItem": {
@@ -245,7 +247,7 @@
       "TokenCost": 1,
       "TokenCostLimited": 1,
       "MinLevelAppears": 0,
-      "MaxLevelAppears": 99,
+      "MaxLevelAppears": 1,
       "Rarity": 1,
       "Tables": [
         {
@@ -376,8 +378,8 @@
     {
       "Type": "Firearm",
       "IconName": "launcher.png",
-      "TokenCost": 5,
-      "TokenCostLimited": 7,
+      "TokenCost": 4,
+      "TokenCostLimited": 5,
       "MinLevelAppears": 3,
       "MaxLevelAppears": 99,
       "Rarity": 10,
@@ -440,11 +442,14 @@
           "SpawnsInSmallCase": false,
           "SpawnsInLargeCase": false,
           "UseIDOverride": true,
-          "IDOverride": [
-            "CombatKnife"
+          "IDOverride": [],
+          "Eras": [
+            "WW1",
+            "WW2"
           ],
-          "Eras": [],
-          "Sets": [],
+          "Sets": [
+            "Real"
+          ],
           "Sizes": [],
           "Actions": [],
           "Modes": [],
@@ -465,8 +470,8 @@
     {
       "Type": "Consumable",
       "IconName": "grenade.png",
-      "TokenCost": 6,
-      "TokenCostLimited": 1,
+      "TokenCost": 2,
+      "TokenCostLimited": 3,
       "MinLevelAppears": 2,
       "MaxLevelAppears": 99,
       "Rarity": 5,
@@ -488,15 +493,8 @@
           "IDOverride": [
             "Stielhandgranate"
           ],
-          "Eras": [
-            "TurnOfTheCentury",
-            "WW1",
-            "WW2"
-          ],
-          "Sets": [
-            "Real",
-            "GroundedFictional"
-          ],
+          "Eras": [],
+          "Sets": [],
           "Sizes": [],
           "Actions": [],
           "Modes": [],
@@ -520,8 +518,8 @@
     {
       "Type": "Consumable",
       "IconName": "health.png",
-      "TokenCost": 5,
-      "TokenCostLimited": 5,
+      "TokenCost": 4,
+      "TokenCostLimited": 4,
       "MinLevelAppears": 0,
       "MaxLevelAppears": 99,
       "Rarity": 3,
@@ -568,149 +566,6 @@
       "IconName": "health.png",
       "TokenCost": 3,
       "TokenCostLimited": 3,
-      "MinLevelAppears": 1,
-      "MaxLevelAppears": 99,
-      "Rarity": 5,
-      "Tables": [
-        {
-          "Category": "Powerup",
-          "ItemsToSpawn": 1,
-          "MinAmmoCapacity": -1,
-          "MaxAmmoCapacity": -1,
-          "NumMagsSpawned": -1,
-          "NumRoundsSpawned": -1,
-          "BespokeAttachmentChance": -1,
-          "RequiredExactCapacity": -1,
-          "IsBlanked": false,
-          "IsCompatibleMagazine": false,
-          "SpawnsInSmallCase": false,
-          "SpawnsInLargeCase": false,
-          "UseIDOverride": false,
-          "IDOverride": [],
-          "Eras": [],
-          "Sets": [],
-          "Sizes": [],
-          "Actions": [],
-          "Modes": [],
-          "ExcludedModes": [],
-          "FeedOptions": [],
-          "MountsAvailable": [],
-          "RoundPowers": [],
-          "Features": [],
-          "MeleeStyles": [],
-          "MeleeHandedness": [],
-          "MountTypes": [],
-          "PowerupTypes": [
-            "Health",
-            "QuadDamage",
-            "InfiniteAmmo",
-            "Invincibility",
-            "GhostMode",
-            "MuscleMeat",
-            "Regen",
-            "Cyclops"
-          ],
-          "ThrownTypes": [],
-          "ThrownDamageTypes": []
-        }
-      ]
-    },
-    {
-      "Type": "Consumable",
-      "IconName": "health.png",
-      "TokenCost": 1,
-      "TokenCostLimited": 1,
-      "MinLevelAppears": 1,
-      "MaxLevelAppears": 99,
-      "Rarity": 3,
-      "Tables": [
-        {
-          "Category": "Powerup",
-          "ItemsToSpawn": 1,
-          "MinAmmoCapacity": -1,
-          "MaxAmmoCapacity": -1,
-          "NumMagsSpawned": -1,
-          "NumRoundsSpawned": -1,
-          "BespokeAttachmentChance": -1,
-          "RequiredExactCapacity": -1,
-          "IsBlanked": false,
-          "IsCompatibleMagazine": false,
-          "SpawnsInSmallCase": false,
-          "SpawnsInLargeCase": false,
-          "UseIDOverride": false,
-          "IDOverride": [],
-          "Eras": [],
-          "Sets": [],
-          "Sizes": [],
-          "Actions": [],
-          "Modes": [],
-          "ExcludedModes": [],
-          "FeedOptions": [],
-          "MountsAvailable": [],
-          "RoundPowers": [],
-          "Features": [],
-          "MeleeStyles": [],
-          "MeleeHandedness": [],
-          "MountTypes": [],
-          "PowerupTypes": [
-            "MuscleMeat"
-          ],
-          "ThrownTypes": [],
-          "ThrownDamageTypes": []
-        }
-      ]
-    },
-    {
-      "Type": "Consumable",
-      "IconName": "health.png",
-      "TokenCost": 3,
-      "TokenCostLimited": 3,
-      "MinLevelAppears": 1,
-      "MaxLevelAppears": 99,
-      "Rarity": 3,
-      "Tables": [
-        {
-          "Category": "Powerup",
-          "ItemsToSpawn": 1,
-          "MinAmmoCapacity": -1,
-          "MaxAmmoCapacity": -1,
-          "NumMagsSpawned": -1,
-          "NumRoundsSpawned": -1,
-          "BespokeAttachmentChance": -1,
-          "RequiredExactCapacity": -1,
-          "IsBlanked": false,
-          "IsCompatibleMagazine": false,
-          "SpawnsInSmallCase": false,
-          "SpawnsInLargeCase": false,
-          "UseIDOverride": false,
-          "IDOverride": [],
-          "Eras": [],
-          "Sets": [],
-          "Sizes": [],
-          "Actions": [],
-          "Modes": [],
-          "ExcludedModes": [],
-          "FeedOptions": [],
-          "MountsAvailable": [],
-          "RoundPowers": [],
-          "Features": [],
-          "MeleeStyles": [],
-          "MeleeHandedness": [],
-          "MountTypes": [],
-          "PowerupTypes": [
-            "Invincibility",
-            "GhostMode"
-          ],
-          "ThrownTypes": [],
-          "ThrownDamageTypes": []
-        }
-      ]
-    },
-    {
-      "Type": "Consumable",
-      "IconName": "health.png",
-      "TokenCost": 2,
-      "TokenCostLimited": 2,
       "MinLevelAppears": 1,
       "MaxLevelAppears": 99,
       "Rarity": 3,
@@ -760,8 +615,8 @@
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -770,8 +625,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
@@ -817,11 +671,11 @@
             "W_Brown_Patrol"
           ],
           "LeaderType": "W_Brown_Patrol",
-          "PatrolSize": 0,
-          "MaxPatrols": 0,
-          "MaxPatrolsLimited": 0,
-          "PatrolCadence": 0,
-          "PatrolCadenceLimited": 0,
+          "PatrolSize": 2,
+          "MaxPatrols": 2,
+          "MaxPatrolsLimited": 1,
+          "PatrolCadence": 90,
+          "PatrolCadenceLimited": 120,
           "IFFUsed": 1,
           "SwarmPlayer": false,
           "AssualtSpeed": "Walking",
@@ -833,12 +687,12 @@
     },
     {
       "NumOverrideTokensForHold": 4,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MinSupplyPoints": 2,
+      "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -847,8 +701,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
@@ -885,7 +738,7 @@
             "Hardened"
           ],
           "MinTargets": 2,
-          "MaxTargets": 2,
+          "MaxTargets": 4,
           "EnemyType": [
             "W_Brown_Guard"
           ],
@@ -915,9 +768,9 @@
           "EnemyType": [
             "W_Brown_Patrol"
           ],
-          "LeaderType": "W_Brown_Patrol",
-          "PatrolSize": 2,
-          "MaxPatrols": 2,
+          "LeaderType": "W_Brown_Machinegunner",
+          "PatrolSize": 3,
+          "MaxPatrols": 3,
           "MaxPatrolsLimited": 1,
           "PatrolCadence": 90,
           "PatrolCadenceLimited": 120,
@@ -932,12 +785,12 @@
     },
     {
       "NumOverrideTokensForHold": 5,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MinSupplyPoints": 2,
+      "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -946,12 +799,11 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
-        "EnemyType": "W_Brown_Officer",
+        "EnemyType": "W_Brown_Riflewiener",
         "NumTurrets": 0,
         "NumGuards": 3,
         "IFFUsed": 1
@@ -1037,8 +889,8 @@
             "W_Brown_Patrol"
           ],
           "LeaderType": "W_Brown_Grenadier",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
+          "PatrolSize": 4,
+          "MaxPatrols": 4,
           "MaxPatrolsLimited": 1,
           "PatrolCadence": 60,
           "PatrolCadenceLimited": 110,
@@ -1057,8 +909,8 @@
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -1067,8 +919,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
@@ -1158,8 +1009,8 @@
             "W_Brown_Riflewiener"
           ],
           "LeaderType": "W_Brown_Officer",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
+          "PatrolSize": 4,
+          "MaxPatrols": 4,
           "MaxPatrolsLimited": 2,
           "PatrolCadence": 50,
           "PatrolCadenceLimited": 100,
@@ -1178,8 +1029,8 @@
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -1188,8 +1039,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
@@ -1311,8 +1161,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
@@ -1422,8 +1271,8 @@
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -1432,8 +1281,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
@@ -1543,8 +1391,8 @@
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -1553,8 +1401,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
@@ -1644,8 +1491,8 @@
             "W_Brown_Patrol"
           ],
           "LeaderType": "W_Brown_Officer",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
+          "PatrolSize": 4,
+          "MaxPatrols": 4,
           "MaxPatrolsLimited": 2,
           "PatrolCadence": 45,
           "PatrolCadenceLimited": 90,
@@ -1664,8 +1511,8 @@
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -1674,8 +1521,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
@@ -1765,7 +1611,7 @@
             "W_Brown_Grenadier"
           ],
           "LeaderType": "W_Brown_Grenadier",
-          "PatrolSize": 1,
+          "PatrolSize": 2,
           "MaxPatrols": 5,
           "MaxPatrolsLimited": 5,
           "PatrolCadence": 15,
@@ -1785,8 +1631,8 @@
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -1795,8 +1641,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
@@ -1906,8 +1751,8 @@
       "MaxSupplyPoints": 1,
       "MinConstructors": 1,
       "MaxConstructors": 1,
-      "MinPanels": 2,
-      "MaxPanels": 2,
+      "MinPanels": 1,
+      "MaxPanels": 1,
       "MinBoxesSpawned": 2,
       "MaxBoxesSpawned": 4,
       "MinTokensPerSupply": 1,
@@ -1916,8 +1761,7 @@
       "BoxHealthChance": 0.5,
       "PossiblePanelTypes": [
         "AmmoReloader",
-        "MagUpgrader",
-        "Recycler"
+        "MagUpgrader"
       ],
       "TakeChallenge": {
         "TurretType": "SMG",
