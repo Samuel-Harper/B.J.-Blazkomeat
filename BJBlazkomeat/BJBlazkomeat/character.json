@@ -1,7 +1,7 @@
 {
   "DisplayName": "BJ Blazkomeat",
   "Description": "Escape Castle Wurstenstein with a limited arsenal in this Wolfenstein 3D inspired character.",
-  "CharacterID": 5,
+  "CharacterID": 13,
   "CharacterGroup": 2,
   "TableID": "BJBlazkomeat",
   "CharacterIconName": "no",
@@ -37,7 +37,7 @@
         "Category": "Firearm",
         "ItemsToSpawn": 1,
         "MinAmmoCapacity": 1,
-        "MaxAmmoCapacity": 50,
+        "MaxAmmoCapacity": 12,
         "NumMagsSpawned": 3,
         "NumRoundsSpawned": 6,
         "BespokeAttachmentChance": -1,
@@ -253,7 +253,7 @@
         {
           "Category": "Firearm",
           "MinAmmoCapacity": 1,
-          "MaxAmmoCapacity": 50,
+          "MaxAmmoCapacity": 12,
           "NumMagsSpawned": 3,
           "NumRoundsSpawned": 9,
           "BespokeAttachmentChance": 0,
@@ -343,7 +343,7 @@
         {
           "Category": "Firearm",
           "MinAmmoCapacity": 1,
-          "MaxAmmoCapacity": 1000,
+          "MaxAmmoCapacity": 100000,
           "NumMagsSpawned": 1,
           "NumRoundsSpawned": 9,
           "BespokeAttachmentChance": 0,
@@ -386,7 +386,7 @@
       "Tables": [
         {
           "Category": "Firearm",
-          "MinAmmoCapacity": 3,
+          "MinAmmoCapacity": 1,
           "MaxAmmoCapacity": 10,
           "NumMagsSpawned": 3,
           "NumRoundsSpawned": 9,
