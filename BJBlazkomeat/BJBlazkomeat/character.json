@@ -1,11 +1,11 @@
 {
   "DisplayName": "BJ Blazkomeat",
   "Description": "Escape Castle Wurstenstein with a limited arsenal in this Wolfenstein 3D inspired character.",
-  "CharacterID": 13,
+  "CharacterID": 3,
   "CharacterGroup": 2,
   "TableID": "BJBlazkomeat",
   "CharacterIconName": "no",
-  "StartingTokens": 3,
+  "StartingTokens": 0,
   "ForceAllAgentWeapons": false,
   "ForceDisableOutfitFunctionality": false,
   "UsesPurchasePriceIncrement": true,
@@ -252,6 +252,7 @@
       "Tables": [
         {
           "Category": "Firearm",
+          "ItemsToSpawn": 1,
           "MinAmmoCapacity": 1,
           "MaxAmmoCapacity": 12,
           "NumMagsSpawned": 3,
@@ -291,7 +292,7 @@
       "IconName": "smg.png",
       "TokenCost": 3,
       "TokenCostLimited": 3,
-      "MinLevelAppears": 1,
+      "MinLevelAppears": 2,
       "MaxLevelAppears": 99,
       "Rarity": 1,
       "Tables": [
@@ -336,14 +337,15 @@
       "IconName": "chain.png",
       "TokenCost": 5,
       "TokenCostLimited": 7,
-      "MinLevelAppears": 3,
+      "MinLevelAppears": 4,
       "MaxLevelAppears": 99,
       "Rarity": 10,
       "Tables": [
         {
           "Category": "Firearm",
+          "ItemsToSpawn": 1,
           "MinAmmoCapacity": 1,
-          "MaxAmmoCapacity": 100000,
+          "MaxAmmoCapacity": 100000000000,
           "NumMagsSpawned": 1,
           "NumRoundsSpawned": 9,
           "BespokeAttachmentChance": 0,
@@ -386,7 +388,8 @@
       "Tables": [
         {
           "Category": "Firearm",
-          "MinAmmoCapacity": 1,
+          "ItemsToSpawn": 1,
+          "MinAmmoCapacity": 0,
           "MaxAmmoCapacity": 10,
           "NumMagsSpawned": 3,
           "NumRoundsSpawned": 9,
@@ -426,7 +429,7 @@
       "TokenCostLimited": 2,
       "MinLevelAppears": 0,
       "MaxLevelAppears": 99,
-      "Rarity": 10,
+      "Rarity": 1,
       "Tables": [
         {
           "Category": "MeleeWeapon",
@@ -470,7 +473,7 @@
     {
       "Type": "Consumable",
       "IconName": "grenade.png",
-      "TokenCost": 2,
+      "TokenCost": 3,
       "TokenCostLimited": 3,
       "MinLevelAppears": 2,
       "MaxLevelAppears": 99,
@@ -648,7 +651,7 @@
           "MinEnemies": 2,
           "MaxEnemies": 2,
           "MaxEnemiesAlive": 4,
-          "MaxDirections": 1,
+          "MaxDirections": 2,
           "SpawnCadence": 20,
           "ScanTime": 30,
           "WarmupTime": 7,
@@ -672,7 +675,7 @@
           ],
           "LeaderType": "W_Brown_Patrol",
           "PatrolSize": 2,
-          "MaxPatrols": 2,
+          "MaxPatrols": 3,
           "MaxPatrolsLimited": 1,
           "PatrolCadence": 90,
           "PatrolCadenceLimited": 120,
@@ -687,7 +690,7 @@
     },
     {
       "NumOverrideTokensForHold": 4,
-      "MinSupplyPoints": 2,
+      "MinSupplyPoints": 1,
       "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
@@ -715,16 +718,16 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 3,
-          "MaxTargets": 5,
+          "MinTargets": 5,
+          "MaxTargets": 6,
           "EnemyType": [
             "W_Brown_Guard"
           ],
           "LeaderType": "W_Brown_Patrol",
           "MinEnemies": 2,
           "MaxEnemies": 2,
-          "MaxEnemiesAlive": 4,
-          "MaxDirections": 1,
+          "MaxEnemiesAlive": 6,
+          "MaxDirections": 2,
           "SpawnCadence": 20,
           "ScanTime": 30,
           "WarmupTime": 7,
@@ -737,8 +740,8 @@
           "Encryptions": [
             "Hardened"
           ],
-          "MinTargets": 2,
-          "MaxTargets": 4,
+          "MinTargets": 4,
+          "MaxTargets": 5,
           "EnemyType": [
             "W_Brown_Guard"
           ],
@@ -770,7 +773,7 @@
           ],
           "LeaderType": "W_Brown_Machinegunner",
           "PatrolSize": 3,
-          "MaxPatrols": 3,
+          "MaxPatrols": 4,
           "MaxPatrolsLimited": 1,
           "PatrolCadence": 90,
           "PatrolCadenceLimited": 120,
@@ -785,7 +788,7 @@
     },
     {
       "NumOverrideTokensForHold": 5,
-      "MinSupplyPoints": 2,
+      "MinSupplyPoints": 1,
       "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
@@ -813,7 +816,7 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 5,
+          "MinTargets": 6,
           "MaxTargets": 7,
           "EnemyType": [
             "W_Brown_Patrol"
@@ -821,7 +824,7 @@
           "LeaderType": "W_Brown_Grenadier",
           "MinEnemies": 2,
           "MaxEnemies": 2,
-          "MaxEnemiesAlive": 4,
+          "MaxEnemiesAlive": 5,
           "MaxDirections": 2,
           "SpawnCadence": 20,
           "ScanTime": 20,
@@ -835,16 +838,16 @@
           "Encryptions": [
             "Hardened"
           ],
-          "MinTargets": 2,
-          "MaxTargets": 3,
+          "MinTargets": 3,
+          "MaxTargets": 5,
           "EnemyType": [
             "W_Brown_Guard"
           ],
           "LeaderType": "W_Brown_HeavyRiflewiener",
           "MinEnemies": 3,
           "MaxEnemies": 3,
-          "MaxEnemiesAlive": 4,
-          "MaxDirections": 1,
+          "MaxEnemiesAlive": 5,
+          "MaxDirections": 2,
           "SpawnCadence": 20,
           "ScanTime": 40,
           "WarmupTime": 12,
@@ -858,14 +861,14 @@
             "Swarm"
           ],
           "MinTargets": 1,
-          "MaxTargets": 1,
+          "MaxTargets": 2,
           "EnemyType": [
             "W_Brown_Riflewiener"
           ],
           "LeaderType": "W_Brown_Officer",
           "MinEnemies": 3,
           "MaxEnemies": 3,
-          "MaxEnemiesAlive": 4,
+          "MaxEnemiesAlive": 5,
           "MaxDirections": 3,
           "SpawnCadence": 20,
           "ScanTime": 50,
@@ -905,8 +908,8 @@
     },
     {
       "NumOverrideTokensForHold": 5,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MinSupplyPoints": 2,
+      "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
       "MinPanels": 1,
@@ -933,8 +936,8 @@
           "Encryptions": [
             "Hardened"
           ],
-          "MinTargets": 3,
-          "MaxTargets": 3,
+          "MinTargets": 4,
+          "MaxTargets": 6,
           "EnemyType": [
             "W_Brown_Grenadier"
           ],
@@ -956,7 +959,7 @@
             "Static"
           ],
           "MinTargets": 7,
-          "MaxTargets": 8,
+          "MaxTargets": 9,
           "EnemyType": [
             "W_Brown_Patrol"
           ],
@@ -978,7 +981,7 @@
             "Swarm"
           ],
           "MinTargets": 1,
-          "MaxTargets": 1,
+          "MaxTargets": 3,
           "EnemyType": [
             "W_Brown_HeavyRiflewiener"
           ],
@@ -1010,7 +1013,7 @@
           ],
           "LeaderType": "W_Brown_Officer",
           "PatrolSize": 4,
-          "MaxPatrols": 4,
+          "MaxPatrols": 5,
           "MaxPatrolsLimited": 2,
           "PatrolCadence": 50,
           "PatrolCadenceLimited": 100,
@@ -1025,8 +1028,8 @@
     },
     {
       "NumOverrideTokensForHold": 5,
-      "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MinSupplyPoints": 2,
+      "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
       "MinPanels": 1,
@@ -1053,7 +1056,7 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 7,
+          "MinTargets": 9,
           "MaxTargets": 9,
           "EnemyType": [
             "W_Brown_Officer"
@@ -1075,8 +1078,8 @@
           "Encryptions": [
             "Hardened"
           ],
-          "MinTargets": 3,
-          "MaxTargets": 3,
+          "MinTargets": 4,
+          "MaxTargets": 7,
           "EnemyType": [
             "W_Brown_Officer"
           ],
@@ -1098,7 +1101,7 @@
             "Swarm"
           ],
           "MinTargets": 3,
-          "MaxTargets": 3,
+          "MaxTargets": 5,
           "EnemyType": [
             "W_Brown_Officer"
           ],
@@ -1129,8 +1132,8 @@
             "W_Brown_Flamewiener"
           ],
           "LeaderType": "W_Brown_Grenadier",
-          "PatrolSize": 2,
-          "MaxPatrols": 3,
+          "PatrolSize": 4,
+          "MaxPatrols": 5,
           "MaxPatrolsLimited": 2,
           "PatrolCadence": 45,
           "PatrolCadenceLimited": 90,
@@ -1219,8 +1222,8 @@
           "Encryptions": [
             "Swarm"
           ],
-          "MinTargets": 1,
-          "MaxTargets": 1,
+          "MinTargets": 3,
+          "MaxTargets": 3,
           "EnemyType": [
             "W_Brown_HeavyRiflewiener"
           ],
@@ -1251,8 +1254,8 @@
             "W_Brown_Riflewiener"
           ],
           "LeaderType": "W_Brown_Officer",
-          "PatrolSize": 3,
-          "MaxPatrols": 3,
+          "PatrolSize": 4,
+          "MaxPatrols": 5,
           "MaxPatrolsLimited": 2,
           "PatrolCadence": 50,
           "PatrolCadenceLimited": 100,
@@ -1268,7 +1271,7 @@
     {
       "NumOverrideTokensForHold": 2,
       "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
       "MinPanels": 1,
@@ -1295,7 +1298,7 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 7,
+          "MinTargets": 9,
           "MaxTargets": 9,
           "EnemyType": [
             "W_Brown_Officer"
@@ -1317,8 +1320,8 @@
           "Encryptions": [
             "Hardened"
           ],
-          "MinTargets": 3,
-          "MaxTargets": 3,
+          "MinTargets": 4,
+          "MaxTargets": 6,
           "EnemyType": [
             "W_Brown_Officer"
           ],
@@ -1340,7 +1343,7 @@
             "Swarm"
           ],
           "MinTargets": 3,
-          "MaxTargets": 3,
+          "MaxTargets": 5,
           "EnemyType": [
             "W_Brown_Officer"
           ],
@@ -1371,8 +1374,8 @@
             "W_Brown_Flamewiener"
           ],
           "LeaderType": "W_Brown_Grenadier",
-          "PatrolSize": 2,
-          "MaxPatrols": 3,
+          "PatrolSize": 4,
+          "MaxPatrols": 5,
           "MaxPatrolsLimited": 2,
           "PatrolCadence": 45,
           "PatrolCadenceLimited": 90,
@@ -1388,7 +1391,7 @@
     {
       "NumOverrideTokensForHold": 2,
       "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
       "MinPanels": 1,
@@ -1437,7 +1440,7 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 7,
+          "MinTargets": 9,
           "MaxTargets": 9,
           "EnemyType": [
             "W_Brown_Patrol"
@@ -1459,8 +1462,8 @@
           "Encryptions": [
             "Swarm"
           ],
-          "MinTargets": 1,
-          "MaxTargets": 2,
+          "MinTargets": 3,
+          "MaxTargets": 3,
           "EnemyType": [
             "W_Brown_Riflewiener"
           ],
@@ -1492,7 +1495,7 @@
           ],
           "LeaderType": "W_Brown_Officer",
           "PatrolSize": 4,
-          "MaxPatrols": 4,
+          "MaxPatrols": 5,
           "MaxPatrolsLimited": 2,
           "PatrolCadence": 45,
           "PatrolCadenceLimited": 90,
@@ -1508,7 +1511,7 @@
     {
       "NumOverrideTokensForHold": 2,
       "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
       "MinPanels": 1,
@@ -1535,8 +1538,8 @@
           "Encryptions": [
             "Swarm"
           ],
-          "MinTargets": 1,
-          "MaxTargets": 2,
+          "MinTargets": 3,
+          "MaxTargets": 4,
           "EnemyType": [
             "W_Brown_Patrol"
           ],
@@ -1557,8 +1560,8 @@
           "Encryptions": [
             "Hardened"
           ],
-          "MinTargets": 3,
-          "MaxTargets": 5,
+          "MinTargets": 5,
+          "MaxTargets": 6,
           "EnemyType": [
             "W_Brown_Guard"
           ],
@@ -1579,8 +1582,8 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 6,
-          "MaxTargets": 9,
+          "MinTargets": 9,
+          "MaxTargets": 12,
           "EnemyType": [
             "W_Brown_Grenadier"
           ],
@@ -1611,7 +1614,7 @@
             "W_Brown_Grenadier"
           ],
           "LeaderType": "W_Brown_Grenadier",
-          "PatrolSize": 2,
+          "PatrolSize": 4,
           "MaxPatrols": 5,
           "MaxPatrolsLimited": 5,
           "PatrolCadence": 15,
@@ -1628,7 +1631,7 @@
     {
       "NumOverrideTokensForHold": 2,
       "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
       "MinPanels": 1,
@@ -1732,7 +1735,7 @@
           ],
           "LeaderType": "W_Brown_Antitank",
           "PatrolSize": 5,
-          "MaxPatrols": 3,
+          "MaxPatrols": 4,
           "MaxPatrolsLimited": 2,
           "PatrolCadence": 45,
           "PatrolCadenceLimited": 90,
@@ -1748,7 +1751,7 @@
     {
       "NumOverrideTokensForHold": 2,
       "MinSupplyPoints": 1,
-      "MaxSupplyPoints": 1,
+      "MaxSupplyPoints": 2,
       "MinConstructors": 1,
       "MaxConstructors": 1,
       "MinPanels": 1,
@@ -1775,8 +1778,8 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 3,
-          "MaxTargets": 6,
+          "MinTargets": 7,
+          "MaxTargets": 9,
           "EnemyType": [
             "W_Brown_Guard"
           ],
@@ -1797,8 +1800,8 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 3,
-          "MaxTargets": 6,
+          "MinTargets": 7,
+          "MaxTargets": 9,
           "EnemyType": [
             "W_Brown_Patrol"
           ],
@@ -1819,8 +1822,8 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 3,
-          "MaxTargets": 6,
+          "MinTargets": 5,
+          "MaxTargets": 7,
           "EnemyType": [
             "W_Brown_Grenadier"
           ],
@@ -1841,8 +1844,8 @@
           "Encryptions": [
             "Static"
           ],
-          "MinTargets": 3,
-          "MaxTargets": 6,
+          "MinTargets": 5,
+          "MaxTargets": 7,
           "EnemyType": [
             "W_Brown_Officer"
           ],
@@ -1895,7 +1898,7 @@
             "W_Brown_Flamewiener"
           ],
           "LeaderType": "W_Brown_Flamewiener",
-          "PatrolSize": 1,
+          "PatrolSize": 3,
           "MaxPatrols": 5,
           "MaxPatrolsLimited": 3,
           "PatrolCadence": 15,
