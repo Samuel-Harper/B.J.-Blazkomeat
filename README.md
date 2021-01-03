@@ -12,7 +12,7 @@ Grab the latest zip file from the Releases page and drop it into the `/mods` fol
 
 ## Details
 In this character you have a limited arsenal available based on the original Wolfenstein 3D game from 1992, including:
-* P38 / LugerP08 
+* P38
 
 ![Pistol](/BJBlazkomeat/BJBlazkomeat/pistol.png)
 
