@@ -48,8 +48,7 @@
         "SpawnsInLargeCase": false,
         "UseIDOverride": true,
         "IDOverride": [
-          "P38",
-          "LugerP08"
+          "P38"
         ],
         "Eras": [
           "WW2"
@@ -265,8 +264,7 @@
           "SpawnsInLargeCase": false,
           "UseIDOverride": true,
           "IDOverride": [
-            "P38",
-            "LugerP08"
+            "P38"
           ],
           "Eras": [],
           "Sets": [],
